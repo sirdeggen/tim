@@ -6,11 +6,11 @@ import (
 )
 
 func RunTime(s string) (string, time.Time) {
-	log.Println("Go:	", s)
+	log.Println("Go: ", s)
 	return s, time.Now()
 }
 
 func TrackThisFunctions(s string, startTime time.Time) {
 	endTime := time.Now()
-	log.Println("Stop:	", s, "took", endTime.Sub(startTime))
+	log.Println("Stop: ", s, "took: ", endTime.Sub(startTime))
 }
